@@ -11,6 +11,8 @@ resource "aws_securityhub_standards_subscription" "cis_benchmark" {
   standards_arn = "arn:aws:securityhub:::ruleset/cis-aws-foundations-benchmark/v/1.2.0"
 }
 
+/*
+
 # Basic AWS Config Setup
 resource "aws_config_configuration_recorder" "main" {
   role_arn = var.config_role_arn
@@ -21,3 +23,5 @@ resource "aws_config_configuration_recorder" "main" {
     include_global_resource_types = true
   }
 }
+
+*/
