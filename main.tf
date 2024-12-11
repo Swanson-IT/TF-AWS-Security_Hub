@@ -21,7 +21,3 @@ resource "aws_config_configuration_recorder" "main" {
     include_global_resource_types = true
   }
 }
-
-resource "aws_config_delivery_channel" "main" {
-  s3_bucket_name = var.config_s3_bucket
-}
